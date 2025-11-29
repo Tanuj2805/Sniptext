@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import * as mammoth from "mammoth/mammoth.browser";
+import mammoth from "mammoth";
 import "./FileInput.css";
 
 function FileInput({ setFiledata }) {
@@ -14,7 +14,7 @@ function FileInput({ setFiledata }) {
 
           if(tempfile.size > 20*1024*1024)
         {
-            alert("file size should be less than 5 Mb");
+            alert("file size should be less than 20 Mb");
             return;
         }
 
