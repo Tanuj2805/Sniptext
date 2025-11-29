@@ -1,16 +1,30 @@
-# React + Vite
+File Line Extractor – Read & Extract Text from Files
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project allows users to upload a .txt or .docx file and extract only selected lines based on input range. The file is processed completely on the client side inside the browser, which means no file is uploaded or stored on any server. The tool displays the file content as plain text, keeps line breaks intact, and helps users quickly view or isolate required lines without external software. It is simple, secure, fast, and suitable for text-based documents.
 
-Currently, two official plugins are available:
+**What the Project Does**
+- Allows user to upload a text or Word file.
+- Reads the content and shows it on the screen.
+- Preserves line breaks and text formatting.
+- Lets the user enter a start line number and end line number.
+- Extracts and displays only the lines between the given range.
+- Shows total number of available lines in the file.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Allowed File Types**
+- Supports .txt files.
+- Supports .docx files (converted using mammoth.browser).
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Input Rules & Validations**
+- File must be .txt or .docx only.
+- A recommended file size limit is 5MB to avoid browser slowdowns.
+- Both start and end line values are required.
+- Start line must not be greater than end line.
+- Line numbers must exist inside the file range.
+- Content is displayed exactly as it appears in the file.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Security & Privacy Notes**
+- Entire processing happens locally in the browser.
+- No backend or file upload to server is required.
+- No file data leaves the user’s device.
+- Does not execute scripts from file input — shown as plain text.
