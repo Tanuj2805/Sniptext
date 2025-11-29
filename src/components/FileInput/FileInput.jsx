@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import * as mammoth from "mammoth";
+import * as mammoth from "mammoth/mammoth.browser";
 import "./FileInput.css";
 
 function FileInput({ setFiledata }) {
