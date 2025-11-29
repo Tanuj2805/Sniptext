@@ -34,7 +34,7 @@ function App() {
         if (!filedata)       
           return fail("Upload File First");
 
-        if (!startline || !endline) 
+        if (!startline  && startline != 0 || !endline && endline != 0) 
           return fail("Please Fill All Input Fields");
 
         if (startline <= 0 || endline <= 0) 
