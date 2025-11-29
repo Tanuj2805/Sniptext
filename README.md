@@ -17,7 +17,7 @@ This project allows users to upload a .txt or .docx file and extract only select
 
 **Input Rules & Validations**
 - File must be .txt or .docx only.
-- A recommended file size limit is 5MB to avoid browser slowdowns.
+- A recommended file size limit is 20MB to avoid browser slowdowns.
 - Both start and end line values are required.
 - Start line must not be greater than end line.
 - Line numbers must exist inside the file range.
