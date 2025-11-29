@@ -70,7 +70,7 @@ function App() {
   return (
     <>
       <FileInput setFiledata={setfiledata}></FileInput>
-      <div>
+      <div style={{width:'70%'}}>
 
           <div>
             <LineInput printmsg="Enter Starting Line Number" setdata={setstartline}></LineInput>
