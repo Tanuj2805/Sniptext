@@ -1,0 +1,15 @@
+.file-content-container {
+    width: 100%;
+    height: 75vh;  
+
+    border: 3px solid whitesmoke; 
+    border-radius: 0.3cm;
+
+    padding: 15px;  
+    overflow-y: auto; 
+    background-color: #111;
+    color: white;
+    
+    text-align: left;
+   
+}
