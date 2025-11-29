@@ -1,4 +1,4 @@
-File Line Extractor – Read & Extract Text from Files
+**Sniptexts – Read & Extract Text from Files**
 
 This project allows users to upload a .txt or .docx file and extract only selected lines based on input range. The file is processed completely on the client side inside the browser, which means no file is uploaded or stored on any server. The tool displays the file content as plain text, keeps line breaks intact, and helps users quickly view or isolate required lines without external software. It is simple, secure, fast, and suitable for text-based documents.
 
