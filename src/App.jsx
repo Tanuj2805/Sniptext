@@ -73,8 +73,8 @@ function App() {
       <div>
 
           <div>
-            <LineInput printmsg="Enter Starting Line" setdata={setstartline}></LineInput>
-            <LineInput printmsg="Enter Ending Line" setdata={setendline}></LineInput>
+            <LineInput printmsg="Enter Starting Line Number" setdata={setstartline}></LineInput>
+            <LineInput printmsg="Enter Ending Line Number" setdata={setendline}></LineInput>
             <button className='input-submit-btn' onClick={verifyinput}>Submit</button>
           </div>
 
